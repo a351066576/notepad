@@ -1,10 +1,8 @@
 一．	运行
 1.	执行notepad.sql文件导入表结构和数据
 2.	导入notepad项目。
-3.	修改src\main\resources\application.properties文件中的mysql配置
- 
-修改src\main\resources\application.properties文件中的redis配置
- 
+3.	修改src\main\resources\application.properties文件中的mysql配置  
+   修改src\main\resources\application.properties文件中的redis配置
 4.	启动redis
 5.	启动src\main\java\com\m\notepad下的NotepadApplication.java类
 6.	访问localhost:8080/druid可进行数据监控，用户名druid，密码druid123
