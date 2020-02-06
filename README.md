@@ -15,17 +15,17 @@
 
 二．	项目介绍
 1.	项目模块
- annotation：注解模块，存放@Log注解
- aspect：切面模块，存放日志切面
- congif：配置模块，用于存放redis的配置类
- controller：控制层
- dao：持久化层
- domain：用于存放实体类
- security：存放spring security的管理类
- service：业务接口
- serviceImpl：业务实现类
- sql：存放sql类
- utils：公共工具类
+ annotation：注解模块，存放@Log注解  
+ aspect：切面模块，存放日志切面  
+ congif：配置模块，用于存放redis的配置类  
+ controller：控制层  
+ dao：持久化层  
+ domain：用于存放实体类  
+ security：存放spring security的管理类  
+ service：业务接口  
+ serviceImpl：业务实现类  
+ sql：存放sql类  
+ utils：公共工具类  
 
 
 
