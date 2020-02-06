@@ -6,10 +6,10 @@
 4.	启动redis
 5.	启动src\main\java\com\m\notepad下的NotepadApplication.java类
 6.	访问localhost:8080/druid可进行数据监控，用户名druid，密码druid123
-7.	访问http://localhost:8080/main 可进入日记本系统。
-普通用户名：mzq   密码：123
-管理员用户名：admin   密码：123
-管理员进入首页可以查看系统日志，普通用户没有权限查看。
+7.	访问http://localhost:8080/main 可进入日记本系统。  
+   普通用户名：mzq   密码：123  
+   管理员用户名：admin   密码：123  
+   管理员进入首页可以查看系统日志，普通用户没有权限查看。
 
 二．	项目介绍
 1.	项目模块  
