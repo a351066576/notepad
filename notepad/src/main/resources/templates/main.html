@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link th:href="@{/modules/bootstrap/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/modules/bootstrap-table/bootstrap-table.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="mt-5 text-muted text-center">
+    <a href="pswPage">修改密码</a>
+    <a href="logout">退出登录</a>
+    <a href="/syslog/syslogPage" id="sysLog">系统日志</a>
+</div>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h3>
+                <span>欢迎使用记事本</span>
+            </h3>
+            <a class="btn btn-primary btn-large" href="/note/addNote">新建日记</a>
+            <div class="bootstrap-table">
+
+                <table id="noteListTable" data-mobile-responsive="true">
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" th:src="@{/modules/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/bootstrap-table/bootstrap-table.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/bootstrap-table/locale/bootstrap-table-zh-CN.min.js}"></script>
+
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link th:href="@{/modules/bootstrap/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/modules/ionicons/css/ionicons.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css}" rel="stylesheet"
+          type="text/css">
+    <link th:href="@{/css/demo.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .div1{
+            margin:0 auto;
+            width:80%;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 查看日记页面 -->
+<div class="div1" id="queryNoteDiv">
+    <br>
+    <h1 th:text="${note.title}">
+        Hello, world!
+    </h1>
+    <br>
+    <pre><p style="font-size:20px" th:text="${note.content}">
+        文章内容
+    </p></pre>
+    <p>
+        <a class="btn btn-primary btn-large" href="/main">返回首页</a>
+        <a class="btn btn-primary btn-large" th:href="@{updateNote(id=${note.id})}">修改日记</a>
+    </p>
+</div>
+
+<script type="text/javascript" th:src="@{/modules/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/popper.js}"></script>
+<script type="text/javascript" th:src="@{/modules/tooltip.js}"></script>
+<script type="text/javascript" th:src="@{/modules/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/nicescroll/jquery.nicescroll.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/moment.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/scroll-up-bar/dist/scroll-up-bar.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/sa-functions.js}"></script>
+<script type="text/javascript" th:src="@{/js/scripts.js}"></script>
+<script type="text/javascript" th:src="@{/js/custom.js}"></script>
+
+</body>
+</html>

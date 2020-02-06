@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+    <link th:href="@{/modules/bootstrap/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/modules/ionicons/css/ionicons.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/demo.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="app">
+    <section class="section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+                    <div class="login-brand">
+                        记事本
+                    </div>
+
+                    <input type="hidden" id="message" value='${message}'>
+
+                    <div class="card card-primary">
+                        <div class="card-header"><h4>修改密码</h4></div>
+
+                        <div class="card-body">
+                            <form method="POST" action="psw" class="needs-validation" novalidate="">
+                                <div class="form-group">
+                                    <label for="username">用户名</label>
+                                    <input id="username" type="text" class="form-control" name="username" tabindex="1" required autofocus>
+                                    <div class="invalid-feedback">
+                                        请输入你的用户名
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="oldPassword" class="d-block">旧密码</label><span th:text="${message}" style="color: red"></span>
+                                    </label>
+                                    <input id="oldPassword" type="password" class="form-control" name="oldPassword" tabindex="2" required>
+                                    <div class="invalid-feedback">
+                                        请输入你的密码
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword" class="d-block">新密码
+                                    </label>
+                                    <input id="newPassword" type="password" class="form-control" name="newPassword" tabindex="2" required>
+                                    <div class="invalid-feedback">
+                                        请输入你的密码
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-block" tabindex="5" value="修改">
+                                    </input>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        var massage = $("#message").val();
+        if(message != null){
+            alert(massage);
+        }
+    });
+</script>
+
+<script type="text/javascript" th:src="@{/modules/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/popper.js}"></script>
+<script type="text/javascript" th:src="@{/modules/tooltip.js}"></script>
+<script type="text/javascript" th:src="@{/modules/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/nicescroll/jquery.nicescroll.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/moment.min.js}"></script>
+<script type="text/javascript" th:src="@{/modules/scroll-up-bar/dist/scroll-up-bar.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/sa-functions.js}"></script>
+<script type="text/javascript" th:src="@{/js/scripts.js}"></script>
+<script type="text/javascript" th:src="@{/js/custom.js}"></script>
+</body>
+</html>
